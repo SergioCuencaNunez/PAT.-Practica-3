@@ -3031,8 +3031,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  background-color: #265B9F;
+  border-color: #265B9F;
 }
 .btn-primary:hover {
   color: #fff;
@@ -11583,6 +11583,12 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200%;
+}
 
 #destinos .destinos-item {
   max-width: 26rem;
@@ -11756,6 +11762,36 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
+section#email-sus {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#email-sus form#email-susForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#email-sus form#email-susForm .form-group input,
+section#email-sus form#email-susForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#email-sus form#email-susForm .form-group input.form-control {
+  height: auto;
+}
+section#email-sus form#email-susForm .form-group-textarea {
+  height: 100%;
+}
+section#email-sus form#email-susForm p.help-block {
+  margin: 0;
+}
+section#email-sus form#email-susForm .form-control:focus {
+  border-color: #265B9F;
+  box-shadow: none;
+}
+section#email-sus form#email-susForm ::-webkit-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
@@ -11808,6 +11844,22 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
+}
+
+.fa-facebook, .fa-facebook-square {
+    color: #3b5998
+}
+
+.fa-twitter, .fa-twitter-square {
+    color: #00aced
+}
+
+.fa-instagram, .fa-instagram-square {
+    color: #C64083
+}
+
+.fa-youtube, .fa-youtube-play, .fa-youtube-square {
+    color: #bb0000
 }
 
 .footer {
