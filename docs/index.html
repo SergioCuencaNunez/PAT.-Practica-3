@@ -98,8 +98,11 @@
                         <h2 class="section-heading text-uppercase">PROGRAMA DE FIDELIZACIÓN</h2><br>
                     </div>
                     <div style="width: 100%">
-                        <a href="./MeliaRewardsAdvantages.html"><img src="assets/img/melia-rewards.png" class="center" style="object-fit:fill; width:1000px; height:160px;"/></a>
-                        <a href="./MeliaRewardsAdvantages.html"><img src="assets/img/melia-rewards.png" class="center" style="object-fit:fill; width:1000px; height:160px;"/></a>
+                        <a href="./MeliaRewardsAdvantages.html"><img src="assets/img/melia-rewards.png" class="center" style="object-fit:fill; width:1000px; height:160px"></a><br>
+                        <div class="text-center">
+                            <a href="./MeliaRewardsRegister.html.html"><button class="btn btn-primary btn-xl text-uppercase">QUIERO SER MELIÁREWARDS</button></a>
+                            <a href="./InicioSesion.html"><button class="btn btn-primary btn-xl text-uppercase">INICIA SESIÓN</button></a>
+                        </div>
                     </div>
             </div>
         </section>
@@ -273,22 +276,37 @@
         </section>
 
         <!-- Promo -->
-        <section class="page-section" id="email-sus">
+        <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">NO TE PIERDAS NUESTRAS PROMOCIONES</h2>
                     <h3 class="section-subheading text-muted">Suscríbete a nuestro boletín y recibe nuestras mejores ofertas y descuentos.</h3>
                 </div>
-                <form id="email-susForm" action="/action_page1.php" method="post">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
-                        <!-- Email address input-->
-                        <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
                     </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-black mb-3">
+                            <div class="fw-bolder">Gracias por tu suscripción al boletín de noticias</div>
+                        </div>
                     </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Suscríbete</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Suscríbete</button></div>
                 </form>
             </div>
         </section>
@@ -303,13 +321,13 @@
                     <table align="center" id="brands-table">
                         <tr>
                             <td scope="col"><a href="https://www.granmelia.com/es/"><img src="assets/img/logos/gran-melia.svg" width="250px" height="200px"/></a></td>
-                            <td scope="col"><a href="https://www.mebymelia.com"><img src="assets/img/logos/me.svg" width="60px" height="150px"/></a></td>
+                            <td scope="col"><a href="https://www.mebymelia.com"><img src="assets/img/logos/me.svg" width="70px" height="150px"/></a></td>
                             <td scope="col"><a href="https://landings.melia.com/es/paradisus/index.html"><img src="assets/img/logos/paradisus.svg" width="150px" height="85px"/></a></td>
                             <td scope="col"><a href="https://landings.melia.com/es/melia/soulmatters/index.html"><img src="assets/img/logos/melia.svg" width="150px" height="120px"/></a></td>
-                            <td scope="col"><a href="https://www.innsidebymelia.com/es/"><img src="assets/img/logos/innside.svg"width="150px" height="135px"/></a></td>
-                            <td scope="col"><a href="https://landings.melia.com/es/tryp/lovers/index.html"><img src="assets/img/logos/tryp.svg"width="100px" height="200px"/></a></td>
-                            <td scope="col"><a href="https://www.sol-hotels.com/es"><img src="assets/img/logos/sol.png" width="60px" height="40px"/></a></td>
-                            <td scope="col"><a href="https://circle.melia.com/es/experiencia"><img src="assets/img/logos/circle.svg" width="200px" height="150px"/></a></td>
+                            <td scope="col"><a href="https://www.innsidebymelia.com/es/"><img src="assets/img/logos/innside.svg" width="150px" height="135px"/></a></td>
+                            <td scope="col"><a href="https://landings.melia.com/es/tryp/lovers/index.html"><img src="assets/img/logos/tryp.svg" width="115px" height="215px"/></a></td>
+                            <td scope="col"><a href="https://www.sol-hotels.com/es"><img src="assets/img/logos/sol.png" width="65px" height="42px"/></a></td>
+                            <td scope="col"><a href="https://circle.melia.com/es/experiencia"><img src="assets/img/logos/circle.svg" width="215px" height="160px"/></a></td>
                             <td scope="col"><a href="./MeliaRewardsAdvantages.html"><img src="assets/img/logos/melia-rewards.svg" width="150px" height="150px"/></a></td>
                         </tr>
                     </table>
@@ -323,10 +341,10 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Meliá Hotels & Resorts&copy; 2022</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-light btn-social mx-3" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-light btn-social mx-3" href="#!"><i class="fab fa-facebook"></i></a>
-                        <a class="btn btn-light btn-social mx-3" href="#!"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-light btn-social mx-3" href="#!"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-light btn-social mx-3" href="https://twitter.com/MeliaHtlResorts"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-social mx-3" href="https://www.facebook.com/Melia.Hotels?fref=ts"><i class="fab fa-facebook"></i></a>
+                        <a class="btn btn-light btn-social mx-3" href="https://instagram.com/meliahtlresorts/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-light btn-social mx-3" href="https://www.youtube.com/channel/UCIslJhf4yPT7UMMPrHIa94w"><i class="fab fa-youtube"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Política de Privacidad</a>
