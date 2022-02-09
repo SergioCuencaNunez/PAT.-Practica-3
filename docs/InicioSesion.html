@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Meliá Hotels & Resorts</title>
+    <meta charset="utf-8">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<body>
+
+    <center> <a href="./index.html" style="font-family: 'Open Sans'"> <img src="MeliaLogo.jpeg" width="25%" height="25%"></a>
+    </center>
+    <div class="terms">
+        <center>
+            <a href="./CheckInOnline.html" style="font-family: 'Open Sans'"> <img src="maleta.png" width="20" height="20"> CHECK-IN ONLINE </a>
+            <a href="./InicioSesion.html" style="font-family: 'Open Sans'" > <img src="usuario.png" width="20" height="20"> INICIO DE SESIÓN </a>
+            <a style="font-family: 'Open Sans'"> <img src="telefono.png" width="20" height="20"> 91-276-4747 </a>
+        </center>
+    </div><br>
+
+    <form action="/action_page.php" method="post" enctype="application/x-www-form-urlencoded">
+        <center>
+            <fieldset style="width:750px; border:1px solid #4238ca; background:#f6f8ff;">
+                <legend style="font-family: 'Open Sans'">Entra en MeliáRewards con: </legend>
+                <a href="https://www.facebook.com/dialog/oauth?response_type=code&redirect_uri=https%3A%2F%2Fwww.melia.com%2Fmeliarewards%2Fhome%2Fregister%2FSocialLoginCallback.jsp&display=popup&scope=email,public_profile&client_id=231661638887259&state=2IswuwMT1bOnofp0zFUHf2r0vHmdSvkEKxz1uMrixaMvjDxzNnztldEyvCGfDcdPdBCy0fCrTMtkaUGKOn2LeeiLlLT0AEB"><img src="FacebookButton.png" style="border: solid 1px #CCC" width="280" height="32"></a>
+                <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?state=cSm2o00MPlHwxVOzsOxBpjBzVBvTvFJxoGczU2lbGk1psgGsqMITuDxHVfQ2loCQSevrjVLlg1TJAjcchgjVEUHpu0wOIkh&access_type=offline&approval_prompt=auto&response_type=code&client_id=493616800848-anbmo9c3e3jk44maf4r49uclovtu6duv.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.melia.com%2Fmeliarewards%2Fhome%2Fregister%2FSocialLoginCallback.jsp&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&flowName=GeneralOAuthFlow"><img src="GoogleButton.png" style="border: solid 1px #CCC" width="280" height="32"></a><br>
+                    <label for="email" style="font-family: 'Open Sans'">Email o Número de usuario de MeliáRewards: </label>
+                    <input type="email" id="email" required="required" name="email"><br>
+                    <label for="pwd" style="font-family: 'Open Sans'">Contraseña: </label>
+                    <input type="password" id="pwd" required="required" name="pwd" minlength="8"><br>
+                    <label style="font-family: 'Open Sans'"><input type="checkbox" id="cbox1">Recuérdame </label><br>
+                    <input type="submit" value="Inicia sesión"><br>
+                    <label style="font-family: 'Open Sans'">¿Aún no tienes cuenta en MeliáRewards?: </label>
+                    <a href="./MeliaRewardsRegister.html"><input type="button" value="Crear cuenta"></a>
+            </fieldset>
+        </center>
+    </form><br>
+
+    <center>
+        <a href="./MeliaBrands.html"> <img src="MeliaBrands2.png" style="object-fit:fill; width:950px; height:80px;"/> </a>
+    </center>
+
+    <div class="terms">
+        <center>
+            <a href="https://twitter.com/MeliaHtlResorts"><img src="gorjeo.png" width="2%" height="1.4%"></a>
+            <a href="https://www.facebook.com/Melia.Hotels?fref=ts"><img src="facebook.png" width="2%" height="1.4%"></a>
+            <a href="https://instagram.com/meliahtlresorts/"><img src="instagram.png" width="2%" height="1.4%"></a>
+            <a href="https://www.youtube.com/channel/UCIslJhf4yPT7UMMPrHIa94w"> <img src="youtube.png" width="2%" height="2%"></a>
+        </center>
+    </div><br>
+
+</body>
+</html>

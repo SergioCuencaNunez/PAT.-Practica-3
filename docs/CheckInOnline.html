@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <title>Meliá Hotels & Resorts</title>
+    <meta charset="utf-8">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<body>
+
+    <center> <a href="./index.html" style="font-family: 'Open Sans'"> <img src="MeliaLogo.jpeg" width="25%" height="25%"></a>
+    </center>
+    <div class="terms">
+        <center>
+            <a href="./CheckInOnline.html" style="font-family: 'Open Sans'"> <img src="maleta.png" width="20" height="20"> CHECK-IN ONLINE </a>
+            <a href="./InicioSesion.html" style="font-family: 'Open Sans'" > <img src="usuario.png" width="20" height="20"> INICIO DE SESIÓN </a>
+            <a style="font-family: 'Open Sans'"> <img src="telefono.png" width="20" height="20"> 91-276-4747 </a>
+        </center>
+    </div><br>
+
+    <center>
+        <h1 style="font-family: 'Open Sans'"> TU CHECK-IN EN UNOS SEGUNDOS</h1>
+        <form action="/action_page.php" method="post" enctype="application/x-www-form-urlencoded">
+            <center>
+                <fieldset style="width:750px; border:1px solid #4238ca; background:#f6f8ff;">
+                    <legend style="font-family: 'Open Sans'">Agiliza tu llegada al hotel:</legend>
+                    <label for="acceso" style="font-family: 'Open Sans'" >Seleccione tipo de acceso:</label>
+                    <select name="acceso" id="acceso">
+                        <option value="loc">Localizador</option>
+                        <option value="cuenta">Mi cuenta MeliáRewards</option>
+                    </select><br>
+                    <label style="font-family: 'Open Sans'" >Número de localizador/ID MeliáRewards:</label>
+                    <input name="textarea" rows="1" cols="20" required="required"></input><br>
+                    <label style="font-family: 'Open Sans'" >Nombre del hotel:</label>
+                    <input name="textarea" rows="1" cols="20" required="required"></input><br>
+                    <div class="grid">
+                        <div class="col-1-4 col-1-4-sm">
+                            <div class="controls">
+                                <label for="arrive" class="label-date" style="font-family: 'Open Sans'" ><i class="fa fa-calendar"></i>&nbsp;&nbsp;Fecha de entrada</label>
+                                <input type="date" id="arrive" class="floatLabel" name="arrive" required="required" min='2022-01-01' max='2023-01-01' value="<?php echo date('Y-m-d'); ?>">
+                            </div>
+                        </div>
+                        <div class="col-1-4 col-1-4-sm">
+                            <div class="controls">
+                                <label for="depart" class="label-date" style="font-family: 'Open Sans'" ><i class="fa fa-calendar"></i>&nbsp;&nbsp;Fecha de salida </label>
+                                <input type="date" id="depart" class="floatLabel" name="depart" required="required" min='2022-01-01' max='2023-01-01' value="<?php echo date('Y-m-d'); ?>" />
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Localiza mi reserva">
+                </fieldset>
+            </center>
+        </form><br>
+
+        <h1 style="font-family: 'Open Sans'"> DISFRUTA DE UN CHECK-IN RÁPIDO Y LLENO DE BENEFICIOS</h1>
+        <h2 style="font-family: 'Open Sans'"> APROVECHA ESTAS VENTAJAS EXCLUSIVAS</h2>
+        <p style="font-family: 'Open Sans'">Ahorra tiempo y vive la mejor experiencia Meliá. Si haces check-in online <br> desde 96 horas antes de la llegada y hasta las 10h del día de llegada al hotel, dispones de:</p>
+        <table class="default">
+            <tr>
+                <th><div style="font-family: 'Open Sans'" >Upgrade de habitación<br><img src="MeliaCheckIn1.png" width="175" height="175"></div></th>
+                <th><div style="font-family: 'Open Sans'" >Asigna huéspedes a cada habitación<br><img src="MeliaCheckIn2.png" width="175" height="175"></div></th>
+            </tr>
+            <tr>
+                <th><p style="font-family: 'Open Sans'">Consigue una habitación de categoría superior <br> a la de tu reserva en pocos segundos <br> (Sujeto a disponibilidad).</th></p>
+                <th><p style="font-family: 'Open Sans'">Añade de forma rápida los datos <br> de tus acompañantes.</th></p>
+            </tr>
+            <tr>
+                <th><div style="font-family: 'Open Sans'" >Hazte MeliáRewards<br><img src="MeliaCheckIn3.png" width="175" height="175"></div></th>
+                <th><div style="font-family: 'Open Sans'" >Abre tu habitación sin necesidad<br><img src="MeliaCheckIn4.png" width="175" height="175"></div></th>
+            </tr>
+            <tr>
+                <th><p style="font-family: 'Open Sans'">Consigue hasta 2.000 puntos <br> MeliáRewards al activar tu cuenta online.</th></p>
+                <th><p style="font-family: 'Open Sans'">Abre tu habitación sin necesidad <br> de pasar por recepción desde la APP de Meliá <br> (Solo en aquellos hoteles con el sistema activo).</th></p>
+            </tr>
+        </table>
+    </center>
+
+    <center>
+        <a href="./MeliaBrands.html"> <img src="MeliaBrands2.png" style="object-fit:fill; width:950px; height:80px;"/></a>
+    </center>
+
+    <div class="terms">
+        <center>
+            <a href="https://twitter.com/MeliaHtlResorts"><img src="gorjeo.png" width="2%" height="1.4%"></a>
+            <a href="https://www.facebook.com/Melia.Hotels?fref=ts"><img src="facebook.png" width="2%" height="1.4%"></a>
+            <a href="https://instagram.com/meliahtlresorts/"><img src="instagram.png" width="2%" height="1.4%"></a>
+            <a href="https://www.youtube.com/channel/UCIslJhf4yPT7UMMPrHIa94w"> <img src="youtube.png" width="2%" height="2%"></a>
+        </center>
+    </div><br>
+
+</body>
+</html>
