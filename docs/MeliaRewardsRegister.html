@@ -12,7 +12,7 @@
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles3.css" rel="stylesheet" />
     </head>
@@ -38,12 +38,12 @@
 
     <!-- Masthead-->
     <header class="masthead">
-        <div id="booking" class="section">
+        <div class="section">
         </div>
     </header>
 
     <!-- Info Grid-->
-    <section class="page-section" id="rewards">
+    <section class="page-section">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">REGÍSTRATE GRATIS</h2>
@@ -322,7 +322,7 @@
 
                         <div class="form-group">
                             <span class="form-label">Fecha de nacimiento</span>
-                            <input class="form-control" type="date" placeholder="Fecha de nacimiento *" data-sb-validations="required"/>
+                            <input class="form-control" type="date" placeholder="Fecha de nacimiento*" data-sb-validations="required"/>
                         </div>
                     </div>
 
@@ -544,6 +544,12 @@
                             <div class="invalid-feedback" data-sb-feedback="address:required">Se requiere una dirección.</div>
                         </div>
 
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="provincia" type="text" placeholder="Provincia*" data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="provincia:required">Se requiere una dirección.</div>
+                        </div>
+
                         <div class="row no-margin">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -555,68 +561,10 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <!-- Name input-->
-                                    <input class="form-control" id="cp" type="text" placeholder="Código Postal*" data-sb-validations="required" />
+                                    <input class="form-control" id="cp" type="tel" placeholder="Código Postal*" data-sb-validations="required" />
                                     <div class="invalid-feedback" data-sb-feedback="cp:required">Se requiere un código postal.</div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <select id="inputProvincia" class="form-control">
-                                <option value="">Provincia*</option>
-                                <option value="Álava/Araba">Álava/Araba</option>
-                                <option value="Albacete">Albacete</option>
-                                <option value="Alicante">Alicante</option>
-                                <option value="Almería">Almería</option>
-                                <option value="Asturias">Asturias</option>
-                                <option value="Ávila">Ávila</option>
-                                <option value="Badajoz">Badajoz</option>
-                                <option value="Baleares">Baleares</option>
-                                <option value="Barcelona">Barcelona</option>
-                                <option value="Burgos">Burgos</option>
-                                <option value="Cáceres">Cáceres</option>
-                                <option value="Cádiz">Cádiz</option>
-                                <option value="Cantabria">Cantabria</option>
-                                <option value="Castellón">Castellón</option>
-                                <option value="Ceuta">Ceuta</option>
-                                <option value="Ciudad Real">Ciudad Real</option>
-                                <option value="Córdoba">Córdoba</option>
-                                <option value="Cuenca">Cuenca</option>
-                                <option value="Gerona/Girona">Gerona/Girona</option>
-                                <option value="Granada">Granada</option>
-                                <option value="Guadalajara">Guadalajara</option>
-                                <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
-                                <option value="Huelva">Huelva</option>
-                                <option value="Huesca">Huesca</option>
-                                <option value="Jaén">Jaén</option>
-                                <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
-                                <option value="La Rioja">La Rioja</option>
-                                <option value="Las Palmas">Las Palmas</option>
-                                <option value="León">León</option>
-                                <option value="Lérida/Lleida">Lérida/Lleida</option>
-                                <option value="Lugo">Lugo</option>
-                                <option value="Madrid">Madrid</option>
-                                <option value="Málaga">Málaga</option>
-                                <option value="Melilla">Melilla</option>
-                                <option value="Murcia">Murcia</option>
-                                <option value="Navarra">Navarra</option>
-                                <option value="Orense/Ourense">Orense/Ourense</option>
-                                <option value="Palencia">Palencia</option>
-                                <option value="Pontevedra">Pontevedra</option>
-                                <option value="Salamanca">Salamanca</option>
-                                <option value="Segovia">Segovia</option>
-                                <option value="Sevilla">Sevilla</option>
-                                <option value="Soria">Soria</option>
-                                <option value="Tarragona">Tarragona</option>
-                                <option value="Tenerife">Tenerife</option>
-                                <option value="Teruel">Teruel</option>
-                                <option value="Toledo">Toledo</option>
-                                <option value="Valencia">Valencia</option>
-                                <option value="Valladolid">Valladolid</option>
-                                <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
-                                <option value="Zamora">Zamora</option>
-                                <option value="Zaragoza">Zaragoza</option>
-                            </select>
                         </div>
 
                         <div class="form-group mb-md-0">
@@ -640,12 +588,12 @@
                         </div>
 
                         <div class="form-group">
-                            <input class="form-control" id="passwd" type="password" placeholder="Contraseña*" data-sb-validations="required,password" />
+                            <input class="form-control" id="passwd" type="password" placeholder="Contraseña*" data-sb-validations="required" />
                             <div class="invalid-feedback" data-sb-feedback="password:required">Se requiere una contraseña.</div>
                         </div>
 
                         <div class="form-group">
-                            <input class="form-control" id="passwd" type="password" placeholder="Repetir contraseña*" data-sb-validations="required,password" />
+                            <input class="form-control" id="passwd" type="password" placeholder="Repetir contraseña*" data-sb-validations="required" />
                             <div class="invalid-feedback" data-sb-feedback="password:required">Se requiere la verificación de contraseña.</div>
                         </div>
                     </div>
@@ -669,18 +617,15 @@
                 <!-- This is what your users will see when the form-->
                 <!-- has successfully submitted-->
                 <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
+                    <div class="text-center mb-3">
                         <div class="fw-bolder">Registro con éxito</div>
-                        To activate this form, sign up at
-                        <br />
-                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                     </div>
                 </div>
                 <!-- Submit error message-->
                 <!---->
                 <!-- This is what your users will see when there is-->
                 <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error en el registro</div></div>
                 <!-- Submit Button-->
                 <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">QUIERO REGISTRARME Y CONSEGUIR 2.000 PUNTOS DE BIENVENIDA</button></div>
             </form>
